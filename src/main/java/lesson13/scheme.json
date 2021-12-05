@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "name" : {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 125,
+      "county": ["UA", "IT", "EN"]
+    },
+    "diameter":
+    {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    }
+  },
+  "required":["name"]
+}
