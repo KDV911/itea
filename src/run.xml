@@ -5,7 +5,11 @@
 <!--    <parameter name="browser" value="chrome"></parameter>-->
     <test name="TestNG">
         <classes>
-            <class name="lesson12.suite.FormsTest"/>
+            <class name="lesson12.suite.FormsTest">
+                    <methods>
+                        <include name="checkbox"></include>
+                    </methods>
+            </class>
         </classes>
     </test>
 </suite>
