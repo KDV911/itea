@@ -46,7 +46,7 @@ public class RestAssuredTest {
         given()
                 .spec(requestSpecification)
         .when()
-                .get()
+                .post()
         .then()
                 .spec(responseSpecification)
                 .body("name", equalTo("Tatooine"))

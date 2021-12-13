@@ -1,5 +1,6 @@
 package lesson12.pages;
 
+import io.qameta.allure.Step;
 import lesson11.CustomLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +31,8 @@ public class HomePage extends PageBase {
         driver.get(URL);
     }
 
+
+    @Step("Verify is banner displayed")
     public boolean isBannerDisplayed() {
 //        boolean isBannerDisplayed = driver.findElement(banner).isDisplayed();
         boolean isBannerDisplayed = banner.isDisplayed();
@@ -38,6 +41,8 @@ public class HomePage extends PageBase {
         return isBannerDisplayed;
     }
 
+
+    @Step("Click tab FORMS")
     public void clickFormsTab() {
 //        driver.findElement(formTab).click();
         formTab.click();

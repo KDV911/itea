@@ -31,7 +31,7 @@ public class OkHttpTest {
 
         Request request =  new Request.Builder()
                 .url(baseUrl + "/store/order")
-                .post(requestBody)
+                    .post(requestBody)
                 .header("Content-type", "application/json")
                 .build();
 
